@@ -12,6 +12,7 @@ import { ArrowButton } from 'src/ui/arrow-button';
 import { Button } from 'src/ui/button';
 import { RadioGroup } from 'src/ui/radio-group';
 import { Select } from 'src/ui/select';
+import { Separator } from 'src/ui/separator';
 import { Text } from 'src/ui/text';
 
 import type { ArticleStateType, OptionType } from 'src/constants/articleProps';
@@ -88,6 +89,7 @@ export const ArticleParamsForm = ({
             options={fontColors}
             onChange={handleChange('fontColor')}
           />
+          <Separator />
           <Select
             title="Цвет фона"
             selected={formState.backgroundColor}
